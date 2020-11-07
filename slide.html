@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Relearn</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#slide-up").click(function () {
+          $("#textBox").slideUp("slow", "linear");
+        });
+
+        $("#slide-down").click(function () {
+          $("#textBox").slideDown("fast", "linear");
+        });
+
+        $("#toggle-slide").click(function () {
+          $("#textBox").slideToggle("fast", "linear");
+        });
+      });
+    </script>
+    <style>
+      #textBox {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <a id="slide-up" href="#">Slide Up</a> |
+    <a id="slide-down" href="#">Slide Down</a>
+    <a id="toggle-slide" href="#">Toogle Slide</a>
+    <div id="textBox">
+      <p class="textCopy">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt fugiat
+        nihil ipsam, recusandae id libero excepturi commodi temporibus,
+      </p>
+      <p>
+        alias repellendus qui sapiente eos, vitae et. Quod cupiditate
+        voluptatibus nisi nulla!
+      </p>
+    </div>
+  </body>
+</html>
