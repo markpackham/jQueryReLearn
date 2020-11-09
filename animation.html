@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Relearn</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#grow").click(function () {
+          $("#textBox").animate(
+            {
+              width: "500px",
+            },
+            2000
+          );
+        });
+
+        $("#move").click(function () {
+          $("#textBox").animate(
+            {
+              marginLeft: "200px",
+            },
+            "fast"
+          );
+        });
+
+        $("#bigger").click(function () {
+          $("#textBox").animate(
+            {
+              fontSize: "40px",
+            },
+            3000
+          );
+        });
+
+        $("#many-things").click(function () {
+          $("#textBox").animate(
+            {
+              fontSize: "5px",
+              marginLeft: "40px",
+              width: "600px",
+            },
+            2000
+          );
+        });
+      });
+    </script>
+    <style>
+      #textBox {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        position: absolute;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <a id="grow" href="#">Grow</a> | <a id="move" href="#">Move</a> |
+    <a id="bigger" href="#">Bigger</a> |
+    <a id="many-things" href="#">Many Things</a>
+    <div id="textBox">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt fugiat
+      nihil ipsam, recusandae id libero excepturi commodi temporibus,
+    </div>
+  </body>
+</html>

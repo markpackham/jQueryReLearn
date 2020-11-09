@@ -6,18 +6,16 @@
     <title>jQuery Relearn</title>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script>
-      $(document).ready(function () {});
+      $(document).ready(function () {
+        $("#toggleMe").click(function () {
+          $("#textBox").toggle(3000, "swing");
+        });
+      });
     </script>
-    <style>
-      #textBox {
-        display: none;
-      }
-    </style>
+    <style></style>
   </head>
   <body>
-    <a id="slide-up" href="#">Slide Up</a> |
-    <a id="slide-down" href="#">Slide Down</a>
-    <a id="toggle-slide" href="#">Toogle Slide</a>
+    <a id="toggleMe" href="#">Toogle Me</a>
     <div id="textBox">
       <p class="textCopy">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt fugiat
