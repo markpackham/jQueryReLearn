@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Relearn</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#add-class").click(function () {
+          $("p:first").addClass("colorBox");
+        });
+        $("#remove-class").click(function () {
+          $("p:first").removeClass("colorBox");
+        });
+        $("#toggle-class").click(function () {
+          $("p:first").toggleClass("colorBox");
+        });
+        $("#increase-class").click(function () {
+          $("p:first").css("font-size", "+=1px");
+        });
+      });
+    </script>
+    <style>
+      .colorBox {
+        color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#" id="add-class">Add Class</a>
+    <a href="#" id="remove-class">Remove Class</a>
+    <a href="#" id="toggle-class">Toggle Class</a>
+    <a href="#" id="increase-class">Increase Class</a>
+    <div id="container">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus,
+        maxime vel iure ut officia itaque quisquam facere excepturi expedita?
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus,
+        maxime vel iure ut officia itaque quisquam facere excepturi expedita?
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus,
+        maxime vel iure ut officia itaque quisquam facere excepturi expedita?
+      </p>
+    </div>
+  </body>
+</html>
