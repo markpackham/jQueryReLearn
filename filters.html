@@ -7,25 +7,32 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script>
       $(document).ready(function () {
-        $("p").css("border", "3px red dotted");
-        $("#headerTop").css("border", "1px blue solid");
-        $(".greenBorder").css("border", "2px green solid");
+        $("#container p:first").css("border", "1px blue solid");
+        $("#container p:last").css("border", "1px red solid");
+        /* think of 0 being the first number when dealing with odd and even like in an array */
+        $("#container p:even").css("background", "yellow");
       });
     </script>
     <style></style>
   </head>
   <body>
-    <p class="text">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt fugiat
-      nihil ipsam, recusandae id libero excepturi commodi temporibus,
-    </p>
-    <p class="text" id="headerTop">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt fugiat
-      nihil ipsam, recusandae id libero excepturi commodi temporibus,
-    </p>
-    <p class="greenBorder">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt fugiat
-      nihil ipsam, recusandae id libero excepturi commodi temporibus,
-    </p>
+    <div id="container">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt fugiat
+        nihil ipsam, recusandae id libero excepturi commodi temporibus,
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt fugiat
+        nihil ipsam, recusandae id libero excepturi commodi temporibus,
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt fugiat
+        nihil ipsam, recusandae id libero excepturi commodi temporibus,
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt fugiat
+        nihil ipsam, recusandae id libero excepturi commodi temporibus,
+      </p>
+    </div>
   </body>
 </html>

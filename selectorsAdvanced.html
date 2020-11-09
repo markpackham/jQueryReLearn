@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Relearn</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("div > p").css("border", "2px solid blue");
+        $("div > p.fourth-para").css("background", "yellow");
+        $("#box + ul").css("background", "red");
+      });
+    </script>
+    <style></style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt fugiat
+      nihil ipsam, recusandae id libero excepturi commodi temporibus,
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt fugiat
+      nihil ipsam, recusandae id libero excepturi commodi temporibus,
+    </p>
+
+    <div>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt fugiat
+        nihil ipsam, recusandae id libero excepturi commodi temporibus,
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt fugiat
+        nihil ipsam, recusandae id libero excepturi commodi temporibus,
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt fugiat
+        nihil ipsam, recusandae id libero excepturi commodi temporibus,
+      </p>
+      <p class="fourth-para">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt fugiat
+        nihil ipsam, recusandae id libero excepturi commodi temporibus,
+      </p>
+    </div>
+
+    <ul>
+      <li><a href="#">home</a></li>
+      <li><a href="#">home</a></li>
+      <li><a href="#">home</a></li>
+      <li><a href="#">home</a></li>
+      <li><a href="#">home</a></li>
+    </ul>
+
+    <div id="box">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam odio
+        sapiente perferendis eaque provident aspernatur accusamus voluptatum,
+        ullam, ex aliquam dolore fuga magnam. Ullam corporis tenetur eligendi
+        aperiam amet a?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam odio
+        sapiente perferendis eaque provident aspernatur accusamus voluptatum,
+        ullam, ex aliquam dolore fuga magnam. Ullam corporis tenetur eligendi
+        aperiam amet a?
+      </p>
+      <p class="last">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam odio
+        sapiente perferendis eaque provident aspernatur accusamus voluptatum,
+        ullam, ex aliquam dolore fuga magnam. Ullam corporis tenetur eligendi
+        aperiam amet a?
+      </p>
+    </div>
+
+    <ul>
+      <li><a href="#">home</a></li>
+      <li><a href="#">home</a></li>
+      <li><a href="#">home</a></li>
+      <li><a href="#">home</a></li>
+      <li><a href="#">home</a></li>
+    </ul>
+  </body>
+</html>
