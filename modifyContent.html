@@ -6,14 +6,20 @@
     <title>jQuery Relearn</title>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script>
-      $(document).ready(function () {});
+      $(document).ready(function () {
+        $("#container p").wrap("<div class='colorBox'>");
+        $("<div>Container2 replaceAll()</div>").replaceAll("#container2");
+        $("#container3").replaceWith("<div>Container3 replaceWith()</div>");
+        $("#container p:last").empty();
+      });
     </script>
-    <style></style>
+    <style>
+      .colorBox {
+        color: lightblue;
+      }
+    </style>
   </head>
   <body>
-    <a href="#" id="append">Append</a>
-    <a href="#" id="prepend">Preppend</a>
-
     <div id="container">
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus,
@@ -28,5 +34,9 @@
         maxime vel iure ut officia itaque quisquam facere excepturi expedita?
       </p>
     </div>
+
+    <div id="container2">I will be replaced</div>
+
+    <div id="container3">I will be replaced</div>
   </body>
 </html>
